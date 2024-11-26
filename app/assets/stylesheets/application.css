@@ -13,3 +13,71 @@
  *= require_tree .
  *= require_self
  */
+/* Countdown Style */
+#letters-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif; /* Use a clean sans-serif font */
+}
+
+.letter-box {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 20px;
+  margin: 5px;
+  background-color: #2c6bd9; /* Blue background color */
+  color: white;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for 3D effect */
+  text-align: center;
+  width: 60px; /* Fixed width for each letter box */
+  height: 60px; /* Fixed height for each letter box */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Basic form styling */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styling */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}

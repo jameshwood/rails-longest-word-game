@@ -1,0 +1,13 @@
+<h1>New Game</h1>
+<p id="letters-display">
+  <% @letters.each do |letter| %>
+    <span class="letter-box"><%= letter %></span>
+  <% end %>
+</p>
+<form class="form" action="/score" method="post" data-turbo="false">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :letters, @letters.to_json %>
+  <input type="text" class="answer" name="answer" placeholder="Answer here">
+  <input type="submit">
+</form>
+
